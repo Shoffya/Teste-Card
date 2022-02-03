@@ -1,0 +1,163 @@
+/*GERAL*/
+
+body{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161626ef;
+}
+
+/* NAVBAR */
+
+.navbar-spam{
+    margin-left: 10px;
+    color: #FFFFFF;
+}
+
+#navbar .nav-link{
+    color: #FFFFFF;
+    display: inline-block;
+    transform: 0.5s ease;
+}
+
+#navbar-items a:hover{
+    color: rgb(240, 17, 91);
+    border-bottom: 3px solid rgb(240, 17, 91);
+}
+
+#navbar-items .nav-link.active{
+    margin-left: 2px;
+    margin-right: 2px;
+    color: rgb(240, 17, 91);
+    border-bottom: 3px solid rgb(240, 17, 91);
+}
+
+#navbar-items .navbar-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.gradient{
+    background-image: linear-gradient(15deg,black 0%,#424270ef 100%);
+}
+
+.icon-color{
+    color: white;
+}
+
+.margin-navbar{
+    border-bottom: 1px solid rgb(240, 17, 91);
+}
+
+#logo{
+    width: 60px;
+}
+
+.border{
+    border-radius: 50%;
+}
+
+/* CARDS */
+
+.card{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.personalization{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .content h2{
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.050);
+    pointer-events: none;
+}
+
+.container .card .content h3{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+}
+
+.container .card .content p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+}
+
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.margin{
+    margin-top: 5%;
+}
+
+/* MODAL */
+
+.modal{
+    background: #16162663;
+}
+
+.color-modal{
+    background-image: linear-gradient(15deg, black 0%, #424270ef 100%);
+    border: 1px solid white;
+    border-bottom: 2px solid rgb(240, 17, 91);
+}
+
+.modal-title{
+    color: white;
+}
