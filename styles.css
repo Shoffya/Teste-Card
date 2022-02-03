@@ -6,7 +6,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #161626ef;
+    background-image: url('img/city.png');
 }
 
 /* NAVBAR */
@@ -93,6 +93,7 @@ body{
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
 }
 
 .container .card .content{
