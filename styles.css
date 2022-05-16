@@ -7,6 +7,10 @@ body {
     align-items: center;
     min-height: 100vh;
     background-image: url('img/city.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* NAVBAR */
@@ -52,10 +56,6 @@ body {
     border-bottom: 1px solid rgb(240, 17, 91);
 }
 
-#logo {
-    width: 60px;
-}
-
 .border {
     border-radius: 50%;
 }
@@ -69,7 +69,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.personalization {
+.container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -144,7 +144,7 @@ body {
 }
 
 .margin {
-    margin-top: 5%;
+    margin-top: 100px;
 }
 
 /* MODAL */
@@ -161,4 +161,71 @@ body {
 
 .modal-title {
     color: white;
+}
+
+/*Responsiveness*/
+
+@media (max-width: 339px) {
+    .container .card {
+        height: 350px;
+    }
+
+    .container .card .content h2 {
+        top: -50px;
+        font-size: 7em;
+    }
+
+    .container .card .content h3 {
+        font-size: 1.7em;
+    }
+
+    .container .card .content p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 294px) {
+    .container .card .content h2 {
+        top: -40px;
+        font-size: 5.7em;
+    }
+
+    .container .card .content h3 {
+        font-size: 1.4em;
+    }
+
+    .container .card .content p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 271px) {
+    .container .card .content h2 {
+        top: -30px;
+    }
+
+    .container .card .content h3 {
+        font-size: 1.2em;
+    }
+
+    .container .card .content p {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 231px) {
+    .container .card {
+        height: 310px;
+    }
+}
+
+@media (max-width: 219px) {
+    .container .card .content h2 {
+        top: -10px;
+        font-size: 5em;
+    }
+
+    .container .card .content a {
+        padding: 5px 10px;
+    }
 }
